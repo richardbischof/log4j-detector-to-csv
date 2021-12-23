@@ -1,6 +1,6 @@
 # log4j-detector-to-csv
 
-This project contains a script to convert and combine all host specific outputs of the log4j-detector logs in json format to one single CSV file.
+This project contains a script to convert and combine all host specific outputs of the [log4j-detector](https://github.com/mergebase/log4j-detector) logs in json format to one single CSV file.
 
 ## Getting started  
 
