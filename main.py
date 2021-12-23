@@ -3,7 +3,6 @@ import glob
 import os
 import csv
 import argparse
-import sys
 
 def process_file(input,output):
     detection_liste = []
