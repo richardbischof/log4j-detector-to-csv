@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "log4j-detector-to-csv"
-version = "0.1.5"
+version = "0.1.6"
 description = "Combines all host specific json outputs from log4j-detector into one single csv file."
 authors = ["Richard Bischof <richard.bischof@lgln.niedersachsen.de>", "Maik Fischer <maik.fischer@lgln.niedersachsen.de>"]
 license = "GNU GPLv3"
