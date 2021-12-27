@@ -51,15 +51,18 @@ def process_file(input,output):
 
     with open(output, 'w') as output:
         wr = csv.writer(output)
-        wr.writerow(["host","filename","type"])
+        wr.writerow(["host","type","filename"])
         wr.writerows(detection_liste)
 
-try:
-    parser = argparse.ArgumentParser(description='Convert log4j-detector json file into one csv')
-    parser.add_argument('-i', '--input', dest="input", help='Input directory', required=True)
-    parser.add_argument('-o', '--output', dest="output", help='Output directory', required=True)
-    args = parser.parse_args()
-    process_file(args.input+"/*.json", args.output)
-except Exception as e:
-    print(e)
+def main():
+    try:
+        parser = argparse.ArgumentParser(description='Convert log4j-detector json file into one csv')
+        parser.add_argument('-i', '--input', dest="input", help='Input directory', required=True)
+        parser.add_argument('-o', '--output', dest="output", help='Output directory', required=True)
+        args = parser.parse_args()
+        process_file(args.input+"/*.json", args.output)
+    except Exception as e:
+        print(e)
 
+if __name__ == '__main__':
+    main()

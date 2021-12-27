@@ -4,8 +4,37 @@ This project contains a script to convert and combine all host specific outputs 
 
 ## Getting started  
 
+### With Python and pip installed
+
+Install log4j-detector-to-csv with pip:
+```bash
+pip install log4j-detector-to-csv
+```
+
+Run log4j-detector-to-csv:
+```bash
+log4j-detector-to-csv -h
+```
+
+Output:
+```bash
+usage: log4j-detector-to-csv [-h] -i INPUT -o OUTPUT
+
+Convert log4j-detector json file into one csv
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input directory
+  -o OUTPUT, --output OUTPUT
+                        Output directory
+
+```
+
+### From Sourcecode
 Prerequisites:
 * python
+* poetry
 
 Clone Repository:
 ```bash
@@ -14,7 +43,7 @@ git clone https://github.com/richardbischof/log4j-detector-to-csv.git
 
 Change in directory:
 ```bash
-cd log4j-detector-to-csv
+cd log4j-detector-to-csv/log4j_detector_to_csv
 ```
 
 Run Script:
